@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: rgb(68, 22, 110);
+    padding: 16px 0;
+    color: white;
+    display: flex;
+    border-bottom: 16px solid rgb(55, 18, 90);
+    justify-content: center;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+header button {
+    margin-left: 16px;
+}
+
+form {
+    background-color: rgb(190, 196, 201);
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(5, 126, 5);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+#btcancel {
+    background-color: brown;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+ul li {
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 240px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.overlay-img-link {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-img-link a {
+    color: azure;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-img-link{
+    opacity: 1;
+} 
